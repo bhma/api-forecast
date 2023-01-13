@@ -1,6 +1,5 @@
 import { InternalError } from '@src/util/errors/internal-error';
 import config, { IConfig } from 'config';
-import { AxiosError } from 'axios';
 import * as HTTPUtil from '@src/util/request';
 
 
