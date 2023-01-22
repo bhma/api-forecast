@@ -6,12 +6,12 @@
         },
         "auth": {
             "key": "some-key",
-            "tokenExpiresIn": "200000"
+            "tokenExpiresIn": "20000000"
         },
         "resources": {
             "StormGlass": {
                 "apiUrl": "https://api.stormglass.io/v2",
-                "apiToken": "do-not-hard-code"
+                "apiToken": "0377a020-9211-11ed-a654-0242ac130002-0377a138-9211-11ed-a654-0242ac130002"
             }
         }
     }
