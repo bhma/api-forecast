@@ -2,6 +2,7 @@ import { InternalError } from '@src/util/errors/internal-error';
 import config, { IConfig } from 'config';
 // Another way to have similar behaviour to TS namespaces
 import * as HTTPUtil from '@src/util/request';
+import { AxiosRequestHeaders } from 'axios';
 
 export interface StormGlassPointSource {
   [key: string]: number;
@@ -86,7 +87,7 @@ export class StormGlass {
         }&source=${this.stormGlassAPISource}`,
         {
           headers: {
-            Authorization: stormglassResourceConfig.get('apiToken'),
+            Authorization: stormglassResourceConfig.get('apiToken') as AxiosRequestHeaders,
           },
         }
       );
